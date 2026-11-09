@@ -1,0 +1,14 @@
+ 1. MÔ HÌNH IPO (INPUT - PROCESS - OUTPUT) XỬ LÝ TÌNH HUỐNG
+ Input (Đầu vào)
+- Câu trả lời/Đề xuất của AI khi hỏi cách khắc phục lỗi "Path not found" khi cài đặt Python: Đưa ra một câu lệnh (command) rất lạ, trông có vẻ can thiệp sâu vào hệ thống hoặc cấu hình hệ điều hành mà chưa rõ tác dụng cụ thể.
+ Process (Quy trình kiểm chứng)
+- Không thực thi (Run) ngay câu lệnh trực tiếp vào Terminal.
+- Tiến hành kiểm chứng thông tin bằng cách tra cứu trên các nguồn chính thống hoặc sử dụng toán tử tìm kiếm chuyên sâu trên Google (ví dụ: kết hợp `site:stackoverflow.com` hoặc tài liệu chính thức của Python) để xem câu lệnh đó có thực sự giải quyết đúng lỗi "Path not found" hay chỉ là ảo giác của AI (AI Hallucination).
+- Phân tích cú pháp lệnh xem có chứa các từ khóa nguy hiểm tác động đến phân vùng hệ thống hay không.
+ Output (Đầu ra / Kết luận)
+- Xác nhận lệnh của AI là **Không an toàn / Có rủi ro ảo giác (Hallucination)**. 
+- Quyết định loại bỏ câu lệnh đó và tìm kiếm giải pháp chuẩn chỉnh từ trang chủ Python hoặc tài liệu kỹ thuật đáng tin cậy.
+ 2. THIẾT KẾ CÂU LỆNH (PROMPT) "HỎI NGƯỢC LẠI" AI
+Để ép AI giải thích độ an toàn trước khi thực thi bất kỳ lệnh nào có nguy cơ ảnh hưởng hệ thống, ta sử dụng mẫu câu Prompt sau:
+"Hãy phân tích chi tiết từng thành phần trong câu lệnh vừa rồi của bạn. Nó tác động cụ thể như thế nào đến hệ thống tập tin hoặc biến môi trường (Environment Variables) của hệ điều hành? Có rủi ro nào làm hỏng hệ thống hay không? Đồng thời, hãy cung cấp nguồn tài liệu chính thức (hoặc đường dẫn StackOverflow) chứng minh câu lệnh này an toàn và giải quyết đúng lỗi 'Path not found' khi cài đặt Python."
+
